@@ -1,0 +1,13 @@
+{
+"name":"OpenProjectSignInHelper",
+"description":"A helper to clean up the register and sign in pages for OpenProject",
+"homepage_url": "https://github.com/ACHPER-Victoria/OpenProjectSignInHelper",
+"version":"1",
+"manifest_version":3,
+"content_scripts": [
+    {
+      "matches": ["https://achper.openproject.com/login*","https://achper.openproject.com/account/register*"],
+      "js": ["modifier.js"]
+    }
+  ]
+}
